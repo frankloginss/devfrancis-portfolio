@@ -1,0 +1,174 @@
+import type { Project, Certification, SkillCategory, HBox, Resource, SocialLink } from "./types";
+
+// ============ SOCIAL LINKS ============
+
+export const socialLinks: SocialLink[] = [
+  { label: "GitHub", href: "https://github.com/frankloginss", icon: "github" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/devfrancis", icon: "linkedin" },
+  { label: "Email", href: "mailto:frankloginss@gmail.com", icon: "mail" },
+];
+
+// ============ PROJECTS ============
+
+export const projects: Project[] = [
+  {
+    id: "placeholder-tool-1",
+    title: "[Tool Name]",
+    description: "Automated reconnaissance tool combining subdomain enumeration, port scanning, and vulnerability detection for bug bounty workflows.",
+    category: "Security Tools",
+    tech: ["Python", "Nuclei", "Subfinder"],
+    github: "https://github.com/frankloginss",
+    featured: true,
+    date: "2026-06-01",
+    challenge: "Streamline the reconnaissance phase of bug bounty hunting into a single automated pipeline.",
+  },
+  {
+    id: "placeholder-bugbounty-1",
+    title: "[Bug Bounty: Vulnerability Name]",
+    description: "Discovered and responsibly disclosed a critical vulnerability in a major web application. Full writeup pending public disclosure.",
+    category: "Bug Bounty",
+    tech: ["Burp Suite", "OWASP"],
+    featured: true,
+    date: "2026-05-15",
+    challenge: "Identified an authentication bypass affecting thousands of users.",
+  },
+  {
+    id: "placeholder-cve-1",
+    title: "[CVE-XXXX-XXXX PoC]",
+    description: "Proof-of-concept exploit for a discovered vulnerability. Developed and tested in a controlled lab environment.",
+    category: "Vulnerability Research",
+    tech: ["Python", "Exploit Development"],
+    github: "https://github.com/frankloginss",
+    featured: false,
+    date: "2026-04-01",
+    challenge: "Developed a reliable exploit chain from initial vulnerability discovery to full system compromise.",
+  },
+  // TODO: Add real projects here. Remove placeholders.
+];
+
+// ============ CERTIFICATIONS ============
+
+export const certifications: Certification[] = [
+  {
+    id: "htb-academy-apps",
+    title: "HTB Academy",
+    fullName: "Attacking Common Applications",
+    issuer: "HackTheBox",
+    date: "2025-12-01",
+    status: "earned",
+  },
+  {
+    id: "oscp",
+    title: "OSCP",
+    fullName: "Offensive Security Certified Professional",
+    issuer: "OffSec",
+    date: "",
+    status: "planned",
+  },
+  {
+    id: "ejpt",
+    title: "eJPT",
+    fullName: "eLearnSecurity Junior Penetration Tester",
+    issuer: "INE Security",
+    date: "",
+    status: "in-progress",
+  },
+];
+
+// ============ SKILLS ============
+
+export const skillCategories: SkillCategory[] = [
+  {
+    title: "Offensive Security",
+    skills: [
+      { name: "Penetration Testing", level: 90 },
+      { name: "Web Application Security", level: 85 },
+      { name: "Active Directory Exploitation", level: 75 },
+      { name: "Network Pentesting", level: 80 },
+      { name: "Bug Bounty Hunting", level: 70 },
+    ],
+  },
+  {
+    title: "Tools & Technologies",
+    skills: [
+      { name: "Burp Suite Pro" },
+      { name: "Nuclei" },
+      { name: "WPScan" },
+      { name: "Metasploit Framework" },
+      { name: "Python" },
+      { name: "Bash" },
+      { name: "Nmap" },
+      { name: "HackTheBox" },
+    ],
+  },
+  {
+    title: "Methodology",
+    skills: [
+      { name: "OWASP Top 10 Testing" },
+      { name: "CVE Research & Exploitation" },
+      { name: "Privilege Escalation" },
+      { name: "OSINT & Reconnaissance" },
+    ],
+  },
+];
+
+// ============ HTB MACHINES (Learning) ============
+
+export const htbBoxes: HBox[] = [
+  { name: "Cap", difficulty: "Easy", os: "Linux", tags: ["IDOR", "Capabilities"] },
+  { name: "Kobold", difficulty: "Easy", os: "Linux", tags: ["LFI", "PrivEsc"] },
+  { name: "DevArea", difficulty: "Medium", os: "Linux", tags: ["Web App", "Lateral Movement"] },
+  { name: "Facts", difficulty: "Easy", os: "Linux", tags: ["OSINT", "Enumeration"] },
+  { name: "Snapped", difficulty: "Easy", os: "Linux", tags: ["Backup Files", "Data Exposure"] },
+  { name: "Garfield", difficulty: "Medium", os: "Linux", tags: ["Web Exploit", "Sudo"] },
+  { name: "VariaType", difficulty: "Medium", os: "Linux", tags: ["Type Juggling", "PrivEsc"] },
+  { name: "CCTV", difficulty: "Medium", os: "Linux", tags: ["Network", "Pivoting"] },
+  { name: "Silentium", difficulty: "Hard", os: "Linux", tags: ["Custom Exploit", "Pivoting"] },
+  { name: "Pirate", difficulty: "Medium", os: "Linux", tags: ["Active"] },
+];
+
+// ============ RESOURCES ============
+
+export const resources: Resource[] = [
+  {
+    title: "HackTricks Cloud",
+    description: "Fork with personal notes and additional techniques for cloud pentesting.",
+    url: "https://github.com/frankloginss",
+    category: "fork",
+  },
+  {
+    title: "PayloadsAllTheThings",
+    description: "Useful fork with custom payloads and methodology notes.",
+    url: "https://github.com/frankloginss",
+    category: "fork",
+  },
+  {
+    title: "PortSwigger Web Security Academy",
+    description: "Primary learning resource for web application security testing techniques.",
+    url: "https://portswigger.net/web-security",
+    category: "learning",
+  },
+  {
+    title: "HackTricks",
+    description: "Comprehensive pentesting methodology and technique reference.",
+    url: "https://book.hacktricks.wiki/",
+    category: "reference",
+  },
+  {
+    title: "OWASP Testing Guide",
+    description: "Standard methodology for web application security assessments.",
+    url: "https://owasp.org/www-project-web-security-testing-guide/",
+    category: "reference",
+  },
+];
+
+// ============ BIO ============
+
+export const bio = {
+  name: "DevFrancis",
+  fullName: "Francis Onyido",
+  tagline: "Security Researcher & Penetration Tester",
+  summary:
+    "Cybersecurity professional specializing in penetration testing, web application security, and vulnerability research. I actively hone my skills through HackTheBox, bug bounty programs, and building custom security tools. My focus areas include OWASP Top 10, Active Directory attacks, and developing automated reconnaissance frameworks.",
+  resumeUrl: "#", // TODO: Add resume PDF link
+};
