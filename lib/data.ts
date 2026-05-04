@@ -123,7 +123,7 @@ export const htbBoxes: HBox[] = [
   { name: "Garfield", difficulty: "Medium", os: "Linux", tags: ["Web Exploit", "Sudo"] },
   { name: "VariaType", difficulty: "Medium", os: "Linux", tags: ["Type Juggling", "PrivEsc"] },
   { name: "CCTV", difficulty: "Medium", os: "Linux", tags: ["Network", "Pivoting"] },
-  { name: "Silentium", difficulty: "Hard", os: "Linux", tags: ["Custom Exploit", "Pivoting"] },
+  { name: "Silentium", difficulty: "Easy", os: "Linux", tags: ["CVE Chain", "Flowise", "Gogs"] },
   { name: "Pirate", difficulty: "Medium", os: "Linux", tags: ["Active"] },
 ];
 
@@ -205,5 +205,15 @@ export const blogPosts: BlogPost[] = [
     readTime: "15 min",
     tags: ["HackTheBox", "Active Directory", "RBCD", "gMSA", "S4U2Proxy", "Windows"],
     url: "/blog/htb-pirate-walkthrough",
+  },
+  {
+    id: "htb-silentium-walkthrough",
+    title: "HTB — Silentium: Flowise RCE to Gogs Symlink Privesc",
+    excerpt: "Chaining CVE-2025-58434 (Flowise token leak), CVE-2025-59528 (Flowise RCE), and CVE-2025-8110 (Gogs symlink write to root authorized_keys) for full system compromise.",
+    date: "2026-05-04",
+    category: "Writeup",
+    readTime: "12 min",
+    tags: ["HackTheBox", "CVE-2025-58434", "CVE-2025-59528", "CVE-2025-8110", "Flowise", "Gogs", "Linux"],
+    url: "/blog/htb-silentium-walkthrough",
   },
 ];
