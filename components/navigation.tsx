@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -19,6 +21,8 @@ const navLinks = [
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -38,28 +42,37 @@ export default function Navigation() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          className="text-primary font-mono font-bold text-lg tracking-tight"
-        >
-          &gt;_ francis onyido
-        </a>
+        {isHome ? (
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="text-primary font-mono font-bold text-lg tracking-tight"
+          >
+            &gt;_ francis onyido
+          </a>
+        ) : (
+          <Link
+            href="/"
+            className="text-primary font-mono font-bold text-lg tracking-tight"
+          >
+            &gt;_ francis onyido
+          </Link>
+        )}
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <ul className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a
-                  href={link.href}
+                <Link
+                  href={isHome ? link.href : `/${link.href}`}
                   className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 font-mono"
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -86,13 +99,13 @@ export default function Navigation() {
             <ul className="flex flex-col px-6 py-4 gap-4">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a
-                    href={link.href}
+                  <Link
+                    href={isHome ? link.href : `/${link.href}`}
                     onClick={() => setMobileOpen(false)}
                     className="text-sm text-muted-foreground hover:text-primary transition-colors font-mono block"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
