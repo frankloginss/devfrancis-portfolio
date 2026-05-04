@@ -196,4 +196,14 @@ export const blogPosts: BlogPost[] = [
     tags: ["HackTheBox", "CVE-2022-46364", "SOAP", "SUID", "Linux"],
     url: "/blog/htb-devarea-walkthrough",
   },
+  {
+    id: "htb-pirate-walkthrough",
+    title: "HTB — Pirate: Pre2k to Domain Admin",
+    excerpt: "Full AD attack chain — Pre2k abuse, gMSA dump, Ligolo-ng pivot, RBCD via NTLM relay, WriteSPN abuse, and S4U2Proxy + altservice to Domain Admin. Zero CVEs.",
+    date: "2026-04-26",
+    category: "Writeup",
+    readTime: "15 min",
+    tags: ["HackTheBox", "Active Directory", "RBCD", "gMSA", "S4U2Proxy", "Windows"],
+    url: "/blog/htb-pirate-walkthrough",
+  },
 ];
