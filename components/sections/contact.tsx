@@ -76,13 +76,13 @@ export default function Contact() {
 
           <motion.div initial={{ opacity: 0, x: 20 }} animate={isInView ? { opacity: 1, x: 0 } : {}} transition={{ delay: 0.3 }}>
             <div className="bg-card border border-border rounded-xl p-6 space-y-4">
-              <a href="mailto:frankloginss@gmail.com" className="flex items-center gap-4 group" aria-label="Email">
+              <a href="mailto:devfrancis04@gmail.com" className="flex items-center gap-4 group" aria-label="Email">
                 <div className="w-10 h-10 rounded-lg bg-muted border border-border flex items-center justify-center group-hover:border-primary/30 transition-colors">
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground font-mono">Email</p>
-                  <p className="text-sm group-hover:text-primary transition-colors">frankloginss@gmail.com</p>
+                  <p className="text-sm group-hover:text-primary transition-colors">devfrancis04@gmail.com</p>
                 </div>
               </a>
               <a href="https://github.com/frankloginss" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group" aria-label="GitHub">
@@ -94,13 +94,13 @@ export default function Contact() {
                   <p className="text-sm group-hover:text-primary transition-colors">github.com/frankloginss</p>
                 </div>
               </a>
-              <a href="https://linkedin.com/in/devfrancis" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group" aria-label="LinkedIn">
+              <a href="https://linkedin.com/in/francisuonyido392b27192" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group" aria-label="LinkedIn">
                 <div className="w-10 h-10 rounded-lg bg-muted border border-border flex items-center justify-center group-hover:border-primary/30 transition-colors">
                   <LinkedInIcon className="h-5 w-5 text-primary" />
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground font-mono">LinkedIn</p>
-                  <p className="text-sm group-hover:text-primary transition-colors">linkedin.com/in/devfrancis</p>
+                  <p className="text-sm group-hover:text-primary transition-colors">linkedin.com/in/francisuonyido392b27192</p>
                 </div>
               </a>
             </div>

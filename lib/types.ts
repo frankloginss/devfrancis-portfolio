@@ -50,3 +50,14 @@ export interface SocialLink {
   href: string;
   icon: string;
 }
+
+export interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  category: "Writeup" | "Research" | "Tools" | "Methodology";
+  readTime: string;
+  tags: string[];
+  url?: string;
+}

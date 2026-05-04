@@ -14,22 +14,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DevFrancis — Security Researcher & Penetration Tester",
+  title: "Francis Onyido — Security Researcher & Penetration Tester",
   description:
-    "Cybersecurity portfolio of DevFrancis — penetration tester, security researcher, and CTF player.",
-  keywords: ["cybersecurity", "penetration testing", "security researcher", "HackTheBox", "DevFrancis"],
+    "Cybersecurity portfolio of Francis Onyido — penetration tester, security researcher, and CTF player.",
+  keywords: ["cybersecurity", "penetration testing", "security researcher", "HackTheBox", "Francis Onyido"],
   metadataBase: new URL("https://frankloginss.github.io/devfrancis-portfolio"),
   openGraph: {
-    title: "DevFrancis — Security Researcher & Penetration Tester",
-    description: "Cybersecurity portfolio of DevFrancis.",
+    title: "Francis Onyido — Security Researcher & Penetration Tester",
+    description: "Cybersecurity portfolio of Francis Onyido.",
     url: "https://frankloginss.github.io/devfrancis-portfolio",
-    siteName: "DevFrancis",
+    siteName: "Francis Onyido",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "DevFrancis — Security Researcher & Penetration Tester",
-    description: "Cybersecurity portfolio of DevFrancis.",
+    title: "Francis Onyido — Security Researcher & Penetration Tester",
+    description: "Cybersecurity portfolio of Francis Onyido.",
   },
 };
 

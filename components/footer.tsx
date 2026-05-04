@@ -23,16 +23,16 @@ export default function Footer() {
     <footer className="border-t border-border py-8 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-muted-foreground text-sm font-mono">
-          &copy; {new Date().getFullYear()} DevFrancis. All rights reserved.
+          &copy; {new Date().getFullYear()} Francis Onyido. All rights reserved.
         </p>
         <div className="flex items-center gap-6">
           <a href="https://github.com/frankloginss" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
             <GitHubIcon className="w-5 h-5" />
           </a>
-          <a href="https://linkedin.com/in/devfrancis" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/francisuonyido392b27192" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
             <LinkedInIcon className="w-5 h-5" />
           </a>
-          <a href="mailto:frankloginss@gmail.com" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Email">
+          <a href="mailto:devfrancis04@gmail.com" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Email">
             <Mail className="w-5 h-5" />
           </a>
         </div>

@@ -11,6 +11,7 @@ const navLinks = [
   { label: "Projects", href: "#projects" },
   { label: "Certifications", href: "#certifications" },
   { label: "Skills", href: "#skills" },
+  { label: "Blog", href: "#blog" },
   { label: "Learning", href: "#learning" },
   { label: "Contact", href: "#contact" },
 ];
@@ -45,7 +46,7 @@ export default function Navigation() {
           }}
           className="text-primary font-mono font-bold text-lg tracking-tight"
         >
-          &gt;_ devfrancis
+          &gt;_ francis onyido
         </a>
 
         <div className="flex items-center gap-2">

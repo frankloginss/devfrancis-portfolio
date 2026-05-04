@@ -1,11 +1,11 @@
-import type { Project, Certification, SkillCategory, HBox, Resource, SocialLink } from "./types";
+import type { Project, Certification, SkillCategory, HBox, Resource, SocialLink, BlogPost } from "./types";
 
 // ============ SOCIAL LINKS ============
 
 export const socialLinks: SocialLink[] = [
   { label: "GitHub", href: "https://github.com/frankloginss", icon: "github" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/devfrancis", icon: "linkedin" },
-  { label: "Email", href: "mailto:frankloginss@gmail.com", icon: "mail" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/francisuonyido392b27192", icon: "linkedin" },
+  { label: "Email", href: "mailto:devfrancis04@gmail.com", icon: "mail" },
 ];
 
 // ============ PROJECTS ============
@@ -165,10 +165,25 @@ export const resources: Resource[] = [
 // ============ BIO ============
 
 export const bio = {
-  name: "DevFrancis",
+  name: "Francis Onyido",
   fullName: "Francis Onyido",
   tagline: "Security Researcher & Penetration Tester",
   summary:
     "Cybersecurity professional specializing in penetration testing, web application security, and vulnerability research. I actively hone my skills through HackTheBox, bug bounty programs, and building custom security tools. My focus areas include OWASP Top 10, Active Directory attacks, and developing automated reconnaissance frameworks.",
   resumeUrl: "#", // TODO: Add resume PDF link
 };
+
+// ============ BLOG POSTS ============
+
+export const blogPosts: BlogPost[] = [
+  {
+    id: "placeholder-blog-1",
+    title: "[Blog Post Title]",
+    excerpt: "Placeholder for an upcoming blog post about cybersecurity research, methodology, or tool development.",
+    date: "2026-05-01",
+    category: "Research",
+    readTime: "5 min",
+    tags: ["Security"],
+  },
+  // TODO: Add real blog posts here. Remove placeholders.
+];

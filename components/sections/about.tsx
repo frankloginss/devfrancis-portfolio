@@ -32,7 +32,7 @@ export default function About() {
               <div className="w-64 h-64 rounded-2xl bg-card border border-border flex items-center justify-center">
                 <div className="text-center">
                   <Shield className="h-16 w-16 text-primary mx-auto mb-2" />
-                  <p className="text-muted-foreground font-mono text-sm">&lt;/DevFrancis&gt;</p>
+                  <p className="text-muted-foreground font-mono text-sm">&lt;/Francis Onyido&gt;</p>
                 </div>
               </div>
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-primary/20 to-chart-1/20 blur-lg -z-10" />
