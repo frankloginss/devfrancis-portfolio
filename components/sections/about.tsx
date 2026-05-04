@@ -29,11 +29,8 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, x: -40 }} animate={isInView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6, delay: 0.2 }}>
             <div className="relative">
-              <div className="w-64 h-64 rounded-2xl bg-card border border-border flex items-center justify-center">
-                <div className="text-center">
-                  <Shield className="h-16 w-16 text-primary mx-auto mb-2" />
-                  <p className="text-muted-foreground font-mono text-sm">&lt;/Francis Onyido&gt;</p>
-                </div>
+              <div className="w-64 h-64 rounded-2xl overflow-hidden border border-border">
+                <img src={`${process.env.NODE_ENV === "production" ? "/devfrancis-portfolio" : ""}/profile.jpg`} alt="Francis Onyido" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-primary/20 to-chart-1/20 blur-lg -z-10" />
             </div>

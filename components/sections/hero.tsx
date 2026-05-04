@@ -28,7 +28,10 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 text-center px-6 flex flex-col items-center justify-center">
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="flex flex-col items-center">
+          <div className="w-28 h-28 md:w-36 md:h-36 rounded-full overflow-hidden border-2 border-primary/30 mb-6">
+            <img src={`${process.env.NODE_ENV === "production" ? "/devfrancis-portfolio" : ""}/profile.jpg`} alt="Francis Onyido" className="w-full h-full object-cover" />
+          </div>
           <p className="text-primary font-mono text-sm mb-4 tracking-widest uppercase">
             Hello, world. I&apos;m
           </p>
