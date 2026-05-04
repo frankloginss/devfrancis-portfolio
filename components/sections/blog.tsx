@@ -110,7 +110,7 @@ export default function Blog() {
                   {post.date}
                 </span>
                 {post.url && (
-                  <a href={post.url} target="_blank" rel="noopener noreferrer" className="text-xs text-primary hover:underline flex items-center gap-1 font-mono">
+                  <a href={post.url} className="text-xs text-primary hover:underline flex items-center gap-1 font-mono">
                     Read more <ArrowRight className="h-3 w-3" />
                   </a>
                 )}

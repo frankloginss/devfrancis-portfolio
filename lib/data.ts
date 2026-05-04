@@ -177,13 +177,13 @@ export const bio = {
 
 export const blogPosts: BlogPost[] = [
   {
-    id: "placeholder-blog-1",
-    title: "[Blog Post Title]",
-    excerpt: "Placeholder for an upcoming blog post about cybersecurity research, methodology, or tool development.",
-    date: "2026-05-01",
-    category: "Research",
-    readTime: "5 min",
-    tags: ["Security"],
+    id: "htb-cap-walkthrough",
+    title: "HackTheBox: Cap — Full Walkthrough",
+    excerpt: "Exploiting an IDOR vulnerability to leak FTP credentials from PCAP captures, then escalating to root via misconfigured Linux capabilities on python3.8.",
+    date: "2026-03-29",
+    category: "Writeup",
+    readTime: "8 min",
+    tags: ["HackTheBox", "IDOR", "Capabilities", "PrivEsc", "Linux"],
+    url: "/blog/htb-cap-walkthrough",
   },
-  // TODO: Add real blog posts here. Remove placeholders.
 ];
