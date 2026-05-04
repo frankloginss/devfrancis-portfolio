@@ -186,4 +186,14 @@ export const blogPosts: BlogPost[] = [
     tags: ["HackTheBox", "IDOR", "Capabilities", "PrivEsc", "Linux"],
     url: "/blog/htb-cap-walkthrough",
   },
+  {
+    id: "htb-devarea-walkthrough",
+    title: "HTB — DevArea: CVE-2022-46364 to Root",
+    excerpt: "Chaining CVE-2022-46364 (MTOM/XOP LFI) for credential theft, Hoverfly middleware RCE, and a world-writable /bin/bash for root via SUID python3.",
+    date: "2026-03-30",
+    category: "Writeup",
+    readTime: "10 min",
+    tags: ["HackTheBox", "CVE-2022-46364", "SOAP", "SUID", "Linux"],
+    url: "/blog/htb-devarea-walkthrough",
+  },
 ];
