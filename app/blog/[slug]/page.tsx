@@ -3,6 +3,7 @@ import { join } from "path";
 import { marked } from "marked";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 
@@ -45,12 +46,12 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           dangerouslySetInnerHTML={{ __html: html }}
         />
         <div className="max-w-3xl mx-auto mt-12 pt-6 border-t border-border">
-          <a
+          <Link
             href="/"
             className="text-primary font-mono text-sm hover:underline"
           >
             &larr; Back to portfolio
-          </a>
+          </Link>
         </div>
       </main>
       <Footer />

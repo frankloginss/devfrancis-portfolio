@@ -3,6 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Calendar, Clock, ArrowRight, Search } from "lucide-react";
+import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { blogPosts } from "@/lib/data";
@@ -110,9 +111,9 @@ export default function Blog() {
                   {post.date}
                 </span>
                 {post.url && (
-                  <a href={post.url} className="text-xs text-primary hover:underline flex items-center gap-1 font-mono">
+                  <Link href={post.url} className="text-xs text-primary hover:underline flex items-center gap-1 font-mono">
                     Read more <ArrowRight className="h-3 w-3" />
-                  </a>
+                  </Link>
                 )}
               </div>
             </motion.article>
