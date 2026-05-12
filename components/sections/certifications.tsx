@@ -37,17 +37,19 @@ export default function Certifications() {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className="bg-card border border-border rounded-xl p-8 text-center hover:border-primary/30 transition-all duration-300 group"
               >
-                <div className="w-20 h-20 mx-auto mb-4 rounded-xl bg-muted border border-border flex items-center justify-center group-hover:border-primary/30 transition-colors overflow-hidden">
-                  {cert.image ? (
+                {cert.image ? (
+                  <div className="w-28 h-28 mx-auto mb-4">
                     <img
                       src={`${process.env.NODE_ENV === "production" ? "/devfrancis-portfolio" : ""}${cert.image}`}
                       alt={cert.fullName}
-                      className="w-full h-full object-contain p-1.5"
+                      className="w-full h-full object-contain"
                     />
-                  ) : (
+                  </div>
+                ) : (
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-xl bg-muted border border-border flex items-center justify-center group-hover:border-primary/30 transition-colors">
                     <Award className="h-8 w-8 text-primary" />
-                  )}
-                </div>
+                  </div>
+                )}
                 <h3 className="font-semibold mb-1">{cert.fullName}</h3>
                 <p className="text-muted-foreground text-sm mb-3">{cert.issuer}</p>
                 <Badge className={`${status.bg} ${status.color} border-0 font-mono text-xs`}>
