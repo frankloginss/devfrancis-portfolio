@@ -19,6 +19,7 @@ export interface Certification {
   date: string;
   status: "earned" | "in-progress" | "planned";
   icon?: string;
+  image?: string;
 }
 
 export interface Skill {

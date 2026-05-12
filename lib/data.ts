@@ -72,6 +72,7 @@ export const certifications: Certification[] = [
     issuer: "HackTheBox",
     date: "",
     status: "in-progress",
+    image: "/certs/htb-cpts.png",
   },
 ];
 
