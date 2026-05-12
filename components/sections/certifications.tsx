@@ -38,11 +38,11 @@ export default function Certifications() {
                 className="bg-card border border-border rounded-xl p-8 text-center hover:border-primary/30 transition-all duration-300 group"
               >
                 {cert.image ? (
-                  <div className="w-28 h-28 mx-auto mb-4">
+                  <div className="w-full max-w-[220px] mx-auto mb-6 rounded-xl bg-white/95 p-3 shadow-sm">
                     <img
                       src={`${process.env.NODE_ENV === "production" ? "/devfrancis-portfolio" : ""}${cert.image}`}
                       alt={cert.fullName}
-                      className="w-full h-full object-contain"
+                      className="w-full h-auto object-contain"
                     />
                   </div>
                 ) : (
